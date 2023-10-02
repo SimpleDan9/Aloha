@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: #4B321D;
+}
+
+.projects {
+  padding: 50px 20px;
+}
+.projects .project__img {
+  max-width: 1309px;
+}
+.projects .project__img img {
+  width: 100%;
+}
+.projects .projects__info {
+  padding: 0 40px;
+}
+.projects .projects__info-title {
+  font-size: 80px;
+  font-weight: 400;
+  margin-top: 84px;
+  max-width: 1319px;
+  line-height: 100px;
+}
+.projects .projects__info .products__info-btn {
+  padding: 11px 17px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 54px;
+  border-radius: 3px;
+  color: #4B321D;
+  border: 2px solid #4B321D;
+}
+
+@media (min-width: 990px) and (max-width: 1200px) {
+  .projects .project__img img {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 989px) {
+  .projects .projects__info h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 500px) and (max-width: 769px) {
+  .projects .projects__info h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .projects .projects__info h1 {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=projects.css.map */

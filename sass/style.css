@@ -1,0 +1,31 @@
+@import url(./header/header.css);
+@import url(./projects/projects.css);
+@import url(./About/about.css);
+@import url(./blog/blog.css);
+@import url(./contact/contact.css);
+@import url(./footer/footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  color: #4B321D;
+}
+body{
+  background: #F1F1EB;
+}
+.blog {
+  display: flex;
+  align-items: center;
+}
+
+.blog {
+  padding: 90px 60px;
+  justify-content: space-between;
+}
+.blog__info p {
+  max-width: 528px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #4B321D;
+}
+
+$primary_color:#4B321D;
+
+%center{
+    display: flex;
+    align-items: center;
+}
+@mixin text_changible($f_size,$f_weight){
+    font-size: $f_size;
+    font-weight: $f_weight;
+}
+
+.projects{
+    padding: 50px 20px;
+    .project__img{
+        max-width: 1309px;
+        img{
+            width: 100%;
+        }
+    }
+    .projects__info{
+        padding:0 40px;
+        &-title{
+            @include text_changible(80px, 400 );
+            margin-top: 84px;
+            max-width: 1319px;
+            line-height: 100px;
+        }
+        .products__info-btn{
+            padding: 11px 17px;
+            cursor: pointer;
+            @include text_changible(20px,400 );
+            margin-top: 54px;
+            border-radius: 3px;
+            color: $primary_color;
+            border: 2px solid #4B321D;
+        }
+    }
+}
+
+@media (min-width:990px) and (max-width:1200px){
+    .projects{
+        .project__img{
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:989px){
+    .projects{
+        .projects__info{
+            h1{
+                font-size:70px ;
+            }
+        }
+    }
+}
+
+@media (min-width:500px) and (max-width:769px){
+    .projects{
+        .projects__info{
+            h1{
+                font-size:50px ;
+            }
+        }
+    }
+}
+
+@media (max-width:500px){
+    .projects{
+        .projects__info{
+            h1{
+                font-size:40px ;
+            }
+        }
+    }
+}

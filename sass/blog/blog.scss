@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #4B321D;
+}
+$primary_color:#4B321D;
+
+%center{
+    display: flex;
+    align-items: center;
+}
+%btn_global{
+    border-radius: 3px;
+    border: 2px solid #4B321D;
+    padding: 11px 17px;
+    color: #4B321D;
+    @include text_changible(20px,400 );
+    
+}
+@mixin text_changible($f_size,$f_weight){
+    font-size: $f_size;
+    font-weight: $f_weight;
+}
+
+
+.blog{
+    padding: 90px 60px;
+    .blog__img{
+        max-width: 590px;
+    }
+    .blog__info{
+        max-width: 528px;
+        p{
+            max-width: 528px;
+            @include text_changible(38px,400 );
+            margin-bottom: 45px;
+        }
+        .blog__info-btn{
+            @extend %btn_global;
+        }
+    }
+}
